@@ -1,8 +1,8 @@
 import React, { ChangeEvent, useState } from "react";
-import "./style/index.css"
+import "./style/index.css";
 
 interface TodoFormProps {
-    onAdd(title: string): void
+  onAdd(title: string): void;
 }
 
 const TodoForm: React.FC<TodoFormProps> = (props) => {

@@ -27,7 +27,10 @@ const App: React.FC = () => {
   };
 
   const removeHandler = (id: number) => {
-    setTodos((prev) => prev.filter((todo) => todo.id !== id));
+    const shoudRemove = confirm("Вы уверенны что хотите удалить элемент?");
+    if (shoudRemove) {
+      setTodos((prev) => prev.filter((todo) => todo.id !== id));
+    }
   };
 
   return (
